@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #0000ff 0%, #ffcc00 100%);
+    background: #fff/* linear-gradient(135deg, white 0%, gray 100%);*/
     margin: 0;
     padding: 0;
     color: #333;
@@ -10,22 +10,30 @@ section {
     padding: 60px 0;
     margin: 20px 0;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: rgba(81, 83, 117, 0.5);
+    background: linear-gradient(140deg, white 0%, #515375 100%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 
 /* Navbar Custom Styles */
 .navbar-custom {
-    background-color: rgba(255, 255, 255, 0.3); /* Transparence */
+    color: #fff;
+    background-color: #000;/*rgba(255, 255, 255, 0.3); /* Transparence */
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Bordure légère en bas */
 }
+
 
 /* Style pour les éléments de navigation */
 .navbar-nav .nav-link {
     padding: 10px 15px; /* Espacement interne */
     border-radius: 5px; /* Coins arrondis */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Animation sur le hover */
+    color: #fff;
+}
+
+.navbar .navbar-expand-lg .navbar-light .navbar-custom .navbar-visible{
+    color: #fff;
 }
 
 /* Style pour les éléments de navigation au survol */
@@ -60,7 +68,7 @@ section {
 
 
 #description h1, #description h2 {
-    color: #0000ff;
+    color: #000;
 }
 
 #description p.lead {
@@ -87,7 +95,7 @@ section {
 }
 
 #team .member img:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 #team .member {
@@ -96,8 +104,8 @@ section {
 }
 
 #projects img {
-    height: 300px;
-    object-fit: cover;
+    height: 600px;
+    object-fit: scale-down;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
@@ -117,7 +125,9 @@ section {
     padding: 60px 0;
     margin: 20px 0;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.5);
+    /*background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(81, 83, 117, 0.5);*/
+    background: linear-gradient(135deg, white 0%, #515375 100%);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
