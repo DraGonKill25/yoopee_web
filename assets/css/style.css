@@ -11,7 +11,7 @@ section {
     margin: 20px 0;
     border-radius: 15px;
     background-color: rgba(81, 83, 117, 0.5);
-    background: linear-gradient(140deg, white 0%, #515375 100%);
+    background: linear-gradient(140deg, #fff 0%, #0452f9 100%);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -32,26 +32,27 @@ section {
     color: #fff;
 }
 
-.navbar .navbar-expand-lg .navbar-light .navbar-custom .navbar-visible{
+/*.navbar .navbar-expand-lg .navbar-light .navbar-custom .navbar-visible{
     color: #fff;
-}
+}*/
 
 /* Style pour les éléments de navigation au survol */
 .navbar-nav .nav-link:hover {
-    background-color: rgba(0, 100, 255, 0.1); /* Couleur de fond au survol */
+    background-color: rgba(0, 128, 0, 0.1); /* Couleur de fond au survol */
     transform: scale(1.1); /* Agrandissement léger au survol */
+    color: #fff;
 }
 
 /* Style pour le bouton de la barre de navigation (réduit en écran mobile) */
 .navbar-toggler {
-    border: 1px solid rgba(0, 0, 0, 0.3); /* Bordure du bouton */
+    border: 1px solid rgba(128, 128, 0, 0.3); /* Bordure du bouton */
     border-radius: 5px; /* Coins arrondis */
     transition: background-color 0.3s ease; /* Animation de fond sur hover */
 }
 
 /* Style pour le bouton de la barre de navigation au survol */
 .navbar-toggler:hover {
-    background-color: rgba(0, 0, 0, 0.6); /* Couleur de fond au survol */
+    background-color: rgba(128, 128, 0, 0.6); /* Couleur de fond au survol */
 }
 
 /* Navbar Hidden on Scroll */
