@@ -64,8 +64,18 @@
                 </div>
 
                 <div class="image-canard">
-                    <img src="./assets/images/duck.png" alt="Canard dans une flaque">
+                    <img src="./assets/images/duck.png" alt="Canard" id="image-rotative">
                 </div>
+                <script>
+                    // Code JavaScript intégré dans le HTML
+                    const image = document.getElementById("image-rotative");
+                    let rotation = 0;
+
+                    image.addEventListener("click", () => {
+                        rotation += 360; // Ajoute 360 degrés de rotation
+                        image.style.transform = `rotate(${rotation}deg)`;
+                    });
+                </script>
             </div>
 
             <h2 class="mt-5 mb-3">Rejoignez-nous</h2>
@@ -88,7 +98,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/images/duck.png" class="d-block w-100" alt="Projet 2">
+                    <img src="assets/images/panda3.png" class="d-block w-100" alt="Projet 2">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Projet 2</h5>
                         <p>Description du projet 2</p>
@@ -123,21 +133,21 @@
                     <div class="member">
                         <img src="assets/images/pp_R.png" alt="Membre 1" class="rounded-circle">
                         <h3>Thierry ROUSSELET </h3>
-                        <p>POSTE</p>
+                        <!--<p>POSTE</p>-->
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="member">
-                        <img src="assets/images/" alt="Membre 2" class="rounded-circle">
+                        <img src="assets/images/pp_M.jpeg" alt="Membre 2" class="rounded-circle">
                         <h3>Marina RILI</h3>
-                        <p>POSTE</p>
+                        <!--<p>POSTE</p>-->
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="member">
                         <img src="assets/images/pp_A.png" alt="Membre 3" class="rounded-circle">
                         <h3>Adam RILI</h3>
-                        <p>POSTE</p>
+                        <!--<p>POSTE</p>-->
                     </div>
                 </div>
             </div>

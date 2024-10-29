@@ -122,7 +122,9 @@ section {
 .image-canard img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 50%; /* Pour rendre l'image ronde */
+    transition: transform 0.5s ease; /* Transition pour l'effet de rotation */
+    cursor: pointer; /* Curseur en forme de main */
 }
 
 @media (max-width: 768px) {
@@ -166,6 +168,10 @@ section {
 
 #projects img:hover {
     transform: scale(1.05);
+}
+
+#projects h5, p {
+    color: black;
 }
 
 #contact {
