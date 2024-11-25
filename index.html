@@ -1,219 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YOOPEE</title>
+    <title>YOOPEE - Révolution Médicale</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
+
+
 <body>
     <!-- Navigation Header -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom navbar-visible" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom navbar-visible fixed-top" id="navbar">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/images/logo.png" width="105" height="105"><span>OOPEE</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand text-white" href="#">
+                <img src="assets/images/logo.png" width="50" height="50" alt="YOOPEE"> <strong>OOPEE</strong>
+            </a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#description">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#team">Équipe</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#description">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#projects">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#team">Équipe</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Landing Page -->
-    <section id="description" class="text-center py-5">
-        <div class="container">
-            <h1>Bienvenue chez YOOPEE</h1>
-            <p class="lead">Chez YOOPEE, nous révolutionnons le domaine médical avec une approche inédite et centrée sur le patient. Notre mission est de transformer les défis de la vie quotidienne en opportunités de bien-être, en offrant des solutions innovantes et accessibles à ceux qui souffrent de maladies chroniques ou de gênes quotidiennes.</p>
-
-            <div class="valeurs-et-image">
-                <div class="valeurs">
-                    <h2 class="mt-5 mb-3">Nos Valeurs</h2>
-                    <table class="table-valeurs">
-                        <tr>
-                            <td><strong>Innovation</strong></td>
-                            <td>Pousser les limites de la science et de la technologie pour créer des solutions jamais vues auparavant.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Accessibilité</strong></td>
-                            <td>Rendre les innovations médicales accessibles à tous, peu importe leur situation.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Empathie</strong></td>
-                            <td>Comprendre les besoins et les défis uniques de chaque patient pour offrir des solutions véritablement adaptées.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Excellence</strong></td>
-                            <td>S'engager à l'excellence dans chaque aspect de notre travail, de la recherche à la mise en œuvre.</td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div class="image-canard">
-                    <img src="./assets/images/duck.png" alt="Canard" id="image-rotative">
-                </div>
-                <script>
-                    // Code JavaScript intégré dans le HTML
-                    const image = document.getElementById("image-rotative");
-                    let rotation = 0;
-
-                    image.addEventListener("click", () => {
-                        rotation += 360; // Ajoute 360 degrés de rotation
-                        image.style.transform = `rotate(${rotation}deg)`;
-                    });
-                </script>
+    <section id="description" class="description-section text-center" data-aos="fade-in">
+        <div class="container d-flex align-items-center flex-wrap">
+            <div class="description-text flex-grow-1">
+                <h1>Bienvenue chez YOOPEE</h1>
+                <p class="lead">Nous révolutionnons le domaine médical avec des solutions centrées sur le patient.</p>
             </div>
-
-            <h2 class="mt-5 mb-3">Rejoignez-nous</h2>
-            <p class="lead">Ensemble, créons un avenir où les maladies ne sont plus des obstacles insurmontables mais des défis que nous pouvons relever avec courage et innovation. Rejoignez-nous dans cette mission exaltante et devenez acteur du changement avec YOOPEE.</p>
+            <div class="description-image">
+                <img src="assets/images/duck.png" alt="Duck Mascot" class="img-fluid animated-duck" loading="lazy">
+            </div>
         </div>
     </section>
 
 
-   
-    <!-- Projets -->
-    <section id="projects" class="text-center">
+    <!-- Projects -->
+<section id="projects" class="text-center" data-aos="slide-in">
+    <div class="container">
         <h2>Nos Projets</h2>
         <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/images/logo.png" class="d-block w-100" alt="Projet 1">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Projet 1</h5>
-                        <p>Description du projet 1</p> <!-- pandas-->
+                    <a href="projet1.html">
+                        <img src="assets/images/logo.png" class="d-block w-100" alt="Projet 1" loading="lazy">
+                    </a>
+                    <div class="carousel-caption">
+                        <h5><a href="projet1.html">YOOPEE</a></h5>
+                        <p>Grâce à l'application YOOPEE sur votre téléphone, vous recevez des alertes sonores et vibrantes au moment idéal pour vous rendre aux toilettes. L'application est entièrement personnalisable, vous permettant d'ajuster l'intensité des vibrations, les sons et la fréquence des rappels en fonction de vos préférences. Offrant une solution simple et intuitive, YOOPEE vise à améliorer le confort et la sécurité des utilisateurs au quotidien.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/images/panda3.png" class="d-block w-100" alt="Projet 2">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Projet 2</h5>
-                        <p>Description du projet 2</p>
+                    <a href="projet2.html">
+                        <img src="assets/images/panda3.png" class="d-block w-100" alt="Projet 2" loading="lazy">
+                    </a>
+                    <div class="carousel-caption">
+                        <h5><a href="projet2.html">Projet 2</a></h5>
+                        <p>Une approche unique.</p>
                     </div>
                 </div>
-                <!--<div class="carousel-item">
-                    <img src="assets/images/pp_groot.PNG" class="d-block w-100" alt="Projet 3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Projet 3</h5>
-                        <p>Description du projet 3</p>
-                    </div>
-                </div>-->
             </div>
-            <a class="carousel-control-prev" href="#projectCarousel" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#projectCarousel" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </a>
+            <!-- Zone grisée pour les boutons -->
+            <div class="carousel-control-prev-overlay"></div>
+            <div class="carousel-control-next-overlay"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
         </div>
-    </section>
+    </div>
+</section>
 
 
     <!-- Membres de l'Entreprise -->
-    <section id="team" class="text-center">
-        <h2>Notre Équipe</h2>
+    <section id="team" class="text-center" data-aos="zoom-in">
         <div class="container">
+            <h2>Notre Équipe</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="member">
-                        <img src="assets/images/pp_R.png" alt="Membre 1" class="rounded-circle">
-                        <h3>Thierry ROUSSELET </h3>
-                        <!--<p>POSTE</p>-->
-                    </div>
+                    <img src="assets/images/pp_R.png" alt="Membre 1" class="rounded-circle" width="150">
+                    <h3>Thierry Rousselet</h3>
                 </div>
                 <div class="col-md-4">
-                    <div class="member">
-                        <img src="assets/images/pp_M.jpeg" alt="Membre 2" class="rounded-circle">
-                        <h3>Marina RILI</h3>
-                        <!--<p>POSTE</p>-->
-                    </div>
+                    <img src="assets/images/pp_M.jpeg" alt="Membre 2" class="rounded-circle" width="150">
+                    <h3>Marina Rili</h3>
                 </div>
                 <div class="col-md-4">
-                    <div class="member">
-                        <img src="assets/images/pp_A.png" alt="Membre 3" class="rounded-circle">
-                        <h3>Adam RILI</h3>
-                        <!--<p>POSTE</p>-->
-                    </div>
+                    <img src="assets/images/pp_A.png" alt="Membre 3" class="rounded-circle" width="150">
+                    <h3>Adam Rili</h3>
                 </div>
             </div>
         </div>
     </section>
 
-
-     <!-- Page de Contact -->
-    <section id="contact" class="py-5">
+    <!-- Contact -->
+    <section id="contact">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Contactez-Nous</h2>
-                    <p class="lead">Nous serions ravis de discuter de vos besoins et de la manière dont nous pouvons vous aider. Veuillez remplir le formulaire ci-contre et nous vous répondrons dans les plus brefs délais.</p>
-                    <ul class="list-unstyled">
-                        <li><strong>Téléphone :</strong> +33 0 00 00 00 00</li>
-                        <li><strong>Email :</strong> yoopee@gmx.fr</li>
-                        <li><strong>Horaires :</strong> Lun - Ven : 9h - 18h</li>
-                    </ul>
+            <h2>Contactez-Nous</h2>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="name" required>
                 </div>
-                <div class="col-md-6">
-                    <form id="contactForm">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Nom</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Envoyer</button>
-                    </form>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
                 </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Rejoignez-Nous -->
+    <section id="join-us" class="text-center" data-aos="fade-up">
+        <div class="container">
+            <h2>Rejoignez-Nous</h2>
+            <p>Suivez-nous sur nos réseaux sociaux pour rester informé de nos dernières nouveautés et initiatives.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </div>
         </div>
     </section>
+
+
+
+    <footer>
+        <p>&copy; 2024 YOOPEE. Tous droits réservés.</p>
+    </footer>
 
     <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-        // JavaScript to show/hide navbar on scroll
-        document.addEventListener('DOMContentLoaded', function() {
-        let lastScrollTop = 0;
+        AOS.init();
+    </script>
+    <script>
+        // Navigation show/hide
+        let lastScrollY = 0;
         const navbar = document.getElementById('navbar');
 
-        window.addEventListener('scroll', function() {
-            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
 
-            if (currentScroll > lastScrollTop) {
-                // Scrolling down
-                navbar.classList.remove('navbar-visible');
+            if (currentScrollY > lastScrollY) {
                 navbar.classList.add('navbar-hidden');
             } else {
-                // Scrolling up
                 navbar.classList.remove('navbar-hidden');
-                navbar.classList.add('navbar-visible');
             }
 
-            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+            lastScrollY = currentScrollY;
         });
-    });
-
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
