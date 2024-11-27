@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 
@@ -43,45 +44,110 @@
             </div>
         </div>
     </section>
+    <script>
+        // Sélectionner l'image
+        const image = document.querySelector('.description-image img');
+
+        // Ajouter un événement de clic
+        image.addEventListener('click', function() {
+            // Ajouter la classe pour faire tourner l'image
+            image.classList.add('rotate-on-click');
+
+            // Supprimer la classe après que l'animation soit terminée (2 secondes ici)
+            setTimeout(function() {
+                image.classList.remove('rotate-on-click');
+            }, 2000); // Temps de l'animation en millisecondes
+        });
+    </script>
+
 
 
     <!-- Projects -->
-<section id="projects" class="text-center" data-aos="slide-in">
-    <div class="container">
-        <h2>Nos Projets</h2>
-        <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <a href="projet1.html">
-                        <img src="assets/images/logo.png" class="d-block w-100" alt="Projet 1" loading="lazy">
-                    </a>
-                    <div class="carousel-caption">
-                        <h5><a href="projet1.html">YOOPEE</a></h5>
-                        <p>Grâce à l'application YOOPEE sur votre téléphone, vous recevez des alertes sonores et vibrantes au moment idéal pour vous rendre aux toilettes. L'application est entièrement personnalisable, vous permettant d'ajuster l'intensité des vibrations, les sons et la fréquence des rappels en fonction de vos préférences. Offrant une solution simple et intuitive, YOOPEE vise à améliorer le confort et la sécurité des utilisateurs au quotidien.</p>
+    <section id="projects" class="text-center" data-aos="slide-in">
+        <div class="container">
+            <h2>Nos Projets</h2>
+            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img src="assets/images/logo.png" class="img-fluid" alt="Projet 1">
+                            </div>
+                            <div class="col-md-6 text-start">
+                                <h5><a href="projet1.html">YOOPEE</a></h5>
+                                <p>
+                                    Grâce à l'application YOOPEE sur votre téléphone, vous recevez des alertes sonores et vibrantes au moment idéal pour vous rendre aux toilettes. L'application est entièrement personnalisable, vous permettant d'ajuster l'intensité des vibrations, les sons et la fréquence des rappels en fonction de vos préférences.
+                                </p>
+                                 <a href="projet1.html" class="btn btn-primary btn-sm">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 order-md-2">
+                                <img src="assets/images/panda3.png" class="img-fluid" alt="Projet 2">
+                            </div>
+                            <div class="col-md-6 text-end order-md-1">
+                                <h5><a href="projet2.html">Projet 2</a></h5>
+                                <p>
+                                    Une approche unique pour répondre aux besoins spécifiques des patients et des professionnels de santé.
+                                </p>
+                                 <a href="projet2.html" class="btn btn-primary btn-sm">Voir plus</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <a href="projet2.html">
-                        <img src="assets/images/panda3.png" class="d-block w-100" alt="Projet 2" loading="lazy">
-                    </a>
-                    <div class="carousel-caption">
-                        <h5><a href="projet2.html">Projet 2</a></h5>
-                        <p>Une approche unique.</p>
-                    </div>
+                <!-- Contrôles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Précédent</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Suivant</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Nos Valeurs -->
+    <section id="values" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nos Valeurs</h2>
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6 order-md-1 text-center" data-aos="fade-right">
+                    <i class="fas fa-lightbulb fa-4x text-primary"></i>
+                </div>
+                <div class="col-md-6 order-md-2" data-aos="fade-left">
+                    <h3>Innovation</h3>
+                    <p>Nous mettons l'innovation au cœur de nos projets pour proposer des solutions modernes et adaptées aux besoins de nos utilisateurs.</p>
                 </div>
             </div>
-            <!-- Zone grisée pour les boutons -->
-            <div class="carousel-control-prev-overlay"></div>
-            <div class="carousel-control-next-overlay"></div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6 order-md-2 text-center" data-aos="fade-left">
+                    <i class="fas fa-heart fa-4x text-danger"></i>
+                </div>
+                <div class="col-md-6 order-md-1" data-aos="fade-right">
+                    <h3>Empathie</h3>
+                    <p>Chaque décision est guidée par notre volonté de comprendre et répondre aux besoins de nos clients.</p>
+                </div>
+            </div>
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6 order-md-1 text-center" data-aos="fade-right">
+                    <i class="fas fa-trophy fa-4x text-warning"></i>
+                </div>
+                <div class="col-md-6 order-md-2" data-aos="fade-left">
+                    <h3>Excellence</h3>
+                    <p>Nous aspirons à atteindre l'excellence dans toutes nos réalisations pour garantir la satisfaction de nos partenaires et utilisateurs.</p>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+
+
 
 
     <!-- Membres de l'Entreprise -->
@@ -90,7 +156,7 @@
             <h2>Notre Équipe</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <img src="assets/images/pp_R.png" alt="Membre 1" class="rounded-circle" width="150">
+                    <img src="assets/images/pp_R.jpg" alt="Membre 1" class="rounded-circle" width="150">
                     <h3>Thierry Rousselet</h3>
                 </div>
                 <div class="col-md-4">
@@ -104,6 +170,8 @@
             </div>
         </div>
     </section>
+
+
 
     <!-- Contact -->
     <section id="contact">
@@ -153,7 +221,7 @@
 
 
     <footer>
-        <p>&copy; 2024 YOOPEE. Tous droits réservés.</p>
+        <p>&copy; 2024 YOOPEE. <a href="cgu.html" class="text-white">Conditions Générales d'Utilisation</a></p>
     </footer>
 
     <script src="assets/js/script.js"></script>
@@ -161,7 +229,11 @@
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1000, // Durée de l'animation (en ms)
+            easing: 'ease-out', // Type de transition
+            once: true, // Animation uniquement lors de la première apparition
+        });
     </script>
     <script>
         // Navigation show/hide

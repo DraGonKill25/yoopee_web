@@ -1,15 +1,21 @@
 /* General Styles */
+:root {
+    --navbar-height: 80px; /* Hauteur de la navbar */
+}
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     color: #333;
+    padding-top: var(--navbar-height);
 }
 
 h1, h2, h3 {
     color: #004aad;
     margin-bottom: 15px;
+    font-weight: bold;
 }
 
 p {
@@ -20,6 +26,13 @@ p {
 .navbar-custom {
     background-color: #004aad;
     transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.navbar-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030; /* Assurez-vous que la navbar reste au-dessus des autres éléments */
 }
 
 .navbar-custom.navbar-hidden {
@@ -62,21 +75,38 @@ section {
     align-items: center;
 }
 
-.description-section .description-text, .description-section .description-image {
-    max-width: 50%;
+/* Rendre l'image ronde et ajuster son apparence */
+.description-image img {
+    border-radius: 50%; /* L'image devient ronde */
+    width: 350px; /* Largeur fixe */
+    height: 350px; /* Hauteur égale à la largeur */
+    object-fit: cover; /* Cadrer l'image correctement */
+    cursor: pointer; /* Changer le curseur au survol */
+    transition: transform 0.4s ease, filter 0.4s ease; /* Transition au survol */
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2)); /* Ombre portée */
 }
 
-.description-section .description-image img {
-    max-width: 70%;
-    height: auto;
-    transition: transform 0.4s ease, filter 0.4s ease;
-    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
+/* Animation de rotation */
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
+/* Classe pour appliquer l'animation au clic */
+.rotate-on-click {
+    animation: rotateImage 2s linear; /* Applique une rotation sur 2 secondes */
+}
+
+/* Effet de survol de l'image */
 .description-section .description-image img:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.3));
+    transform: scale(1.1); /* Agrandir légèrement l'image au survol */
+    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.3)); /* Ombre portée plus prononcée */
 }
+
 
 /* Social Icons */
 .social-icons {
@@ -150,6 +180,127 @@ section {
 /* Assurez-vous que le carrousel reste dans une position relative */
 .carousel-inner {
     position: relative;
+}
+
+/* Réglage des images dans le carrousel */
+#projects .carousel-item img {
+    max-width: 75%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+/* Styles des textes et liens */
+#projects .carousel-item h5 a {
+    text-decoration: none;
+    color: #004aad;
+    font-weight: bold;
+}
+
+#projects .carousel-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Alignement et espacement pour les colonnes */
+#projects .carousel-item .text-start,
+#projects .carousel-item .text-end {
+    padding: 20px;
+}
+
+/* Boutons de navigation */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+/* Boutons de navigation - Zone visible */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Gris semi-transparent */
+    border-radius: 50%; /* Rendre le bouton circulaire */
+    padding: 10px; /* Ajouter de l'espace autour des icônes */
+}
+
+/* Superposition grisée autour des boutons */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.2); /* Zone grise plus sombre */
+    width: 60px; /* Ajuster la largeur des zones de clic */
+}
+
+/* Modification sur hover pour un effet visuel */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.4); /* Zone grisée plus sombre au survol */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Icône encore plus sombre au survol */
+}
+
+/* Style pour le bouton "Voir plus" */
+.carousel-caption .btn {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: #007bff; /* Couleur principale */
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #0056b3; /* Couleur plus sombre au survol */
+    transform: scale(1.05); /* Légère mise en avant */
+}
+
+
+
+
+
+#values img {
+    max-width: 80%; /* Réduire la taille des images */
+    margin: 0 auto; /* Centrer les images */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+#values h3 {
+    color: #007bff; /* Couleur d'accentuation */
+    font-weight: bold;
+}
+
+#values p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+#values i {
+    margin-bottom: 15px;
+}
+
+#values i.text-primary {
+    color: #007bff; /* Bleu */
+}
+
+#values i.text-danger {
+    color: #dc3545; /* Rouge */
+}
+
+#values i.text-warning {
+    color: #ffc107; /* Jaune */
+}
+
+#values h2 {
+    color:  #004aad;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 

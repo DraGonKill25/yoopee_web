@@ -3,103 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet 1 - YOOPEE</title>
-    
-    <!-- Lien vers le fichier CSS principal -->
+    <title>YOOPEE - Détails du Projet</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    
-    <!-- Lien vers AOS pour l'animation -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar identique -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom navbar-visible fixed-top" id="navbar">
+    <!-- Navigation Header -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
         <div class="container">
-            <a class="navbar-brand text-white" href="#">
-                <img src="assets/images/logo.png" width="50" height="50" alt="YOOPEE"> <strong>OOPEE</strong>
+            <a class="navbar-brand text-white" href="index.html">
+                <img src="assets/images/logo.png" width="50" height="50" alt="YOOPEE"> <strong>YOOPEE</strong>
             </a>
-            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="#description">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#projects">Projets</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#team">Équipe</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html#description">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html#projects">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html#team">Équipe</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Section projet -->
-    <section id="project-detail" class="container py-5">
-        <div class="row">
-            <div class="col-md-6" data-aos="fade-right">
-                <img src="assets/images/project1.jpg" alt="Projet 1" class="img-fluid">
-            </div>
-            <div class="col-md-6" data-aos="fade-left">
-                <h2>Le Projet 1</h2>
-                <p><strong>Besoin :</strong> Solution pour résoudre un problème médical.</p>
-                <p><strong>Solution :</strong> Application mobile utilisant React Native, Node.js, et MongoDB.</p>
-                <p><strong>Outils :</strong> React Native, Node.js, MongoDB.</p>
-                <p><strong>Histoire :</strong> L'idée est née après une observation des besoins dans le domaine médical.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Rejoignez-Nous -->
-    <section id="join-us" class="text-center" data-aos="fade-up">
+    <!-- Header Section -->
+    <section class="hero-section text-center text-white py-5" style="background-color: #004aad;">
         <div class="container">
-            <h2>Rejoignez-Nous</h2>
-            <p>Suivez-nous sur nos réseaux sociaux pour rester informé de nos dernières nouveautés et initiatives.</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com" target="_blank" class="social-link">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.twitter.com" target="_blank" class="social-link">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com" target="_blank" class="social-link">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank" class="social-link">
-                    <i class="fab fa-instagram"></i>
-                </a>
+            <h1 class="display-4">YOOPEE - Révolution Médicale</h1>
+            <p class="lead">Découvrez comment nous transformons la vie quotidienne grâce à une solution innovante.</p>
+        </div>
+    </section>
+
+    <!-- Besoin -->
+    <section id="besoin" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-primary mb-4">Le Besoin</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/images/besoin.jpg" class="img-fluid rounded" alt="Besoin">
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        Chaque jour, des milliers de personnes, en particulier les enfants et les personnes âgées, rencontrent des difficultés liées à l'incontinence ou à des besoins imprévus de se rendre aux toilettes. 
+                        Ce problème peut entraîner de l’anxiété, des situations embarrassantes et une diminution de la qualité de vie.
+                    </p>
+                    <p>
+                        Il est essentiel de trouver une solution pour mieux gérer ces moments critiques de manière discrète, efficace et personnalisée.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 YOOPEE. Tous droits réservés.</p>
+    <!-- Solution -->
+    <section id="solution" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center text-primary mb-4">La Solution</h2>
+            <div class="row">
+                <div class="col-md-6 order-md-2">
+                    <img src="assets/images/solution.jpg" class="img-fluid rounded" alt="Solution">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <p>
+                        L'application YOOPEE est une solution révolutionnaire qui vous avertit de manière proactive et discrète lorsque c'est le moment idéal pour vous rendre aux toilettes.
+                    </p>
+                    <p>
+                        Grâce à des notifications sonores et vibrantes personnalisables, YOOPEE est adapté à vos besoins et à vos préférences, vous offrant ainsi un contrôle total et une tranquillité d'esprit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outils -->
+    <section id="outils" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-primary mb-4">Les Outils</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="fas fa-mobile-alt fa-3x text-primary mb-3"></i>
+                    <h5>Application Mobile</h5>
+                    <p>Disponible sur iOS et Android pour une accessibilité optimale.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-cogs fa-3x text-danger mb-3"></i>
+                    <h5>Personnalisation</h5>
+                    <p>Ajustez les paramètres selon vos préférences : intensité, fréquence, et plus.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-brain fa-3x text-warning mb-3"></i>
+                    <h5>Technologie Intelligente</h5>
+                    <p>Des algorithmes avancés pour un suivi précis et fiable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Histoire -->
+    <section id="histoire" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center text-primary mb-4">Notre Histoire</h2>
+            <p>
+                L'idée de YOOPEE est née d'une expérience personnelle vécue par notre fondateur, confronté aux défis liés à l'incontinence dans son entourage familial.
+                Déterminé à créer une solution utile et inclusive, l'équipe de YOOPEE a travaillé sans relâche pour développer une application intuitive et innovante.
+            </p>
+            <p>
+                Aujourd'hui, YOOPEE est une référence dans le domaine des solutions médicales, aidant des milliers de personnes à reprendre confiance en elles et à vivre pleinement.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2024 YOOPEE. Tous droits réservés. | <a href="index.html">Retour à l'accueil</a></p>
     </footer>
 
     <script src="assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-        // Initialisation de AOS
-        AOS.init({
-            duration: 1200,  // Durée de l'animation en millisecondes
-            easing: 'ease-in-out',  // Effet de transition
-            once: true  // L'animation ne se déclenche qu'une fois lors du défilement
-        });
-
-        // Navigation show/hide
-        let lastScrollY = 0;
-        const navbar = document.getElementById('navbar');
-
-        window.addEventListener('scroll', () => {
-            const currentScrollY = window.scrollY;
-
-            if (currentScrollY > lastScrollY) {
-                navbar.classList.add('navbar-hidden');
-            } else {
-                navbar.classList.remove('navbar-hidden');
-            }
-
-            lastScrollY = currentScrollY;
-        });
+        AOS.init();
     </script>
 </body>
 </html>

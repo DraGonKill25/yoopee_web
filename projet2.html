@@ -3,53 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet 2 - YOO'Fog</title>
+    <title>YOO'FOG - Détails du Projet</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom navbar-visible fixed-top" id="navbar">
+    <!-- Navigation Header -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
         <div class="container">
-            <a class="navbar-brand text-white" href="#">
-                <img src="assets/images/logo.png" width="50" height="50" alt="YOOPEE"> <strong> OOPEE</strong>
+            <a class="navbar-brand text-white" href="index.html">
+                <img src="assets/images/logo.png" width="50" height="50" alt="YOO'FOG"> <strong>YOO'FOG</strong>
             </a>
-            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="#description">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#projects">Projets</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#team">Équipe</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html#description">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html#projects">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html#team">Équipe</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Section Détails du projet -->
-    <section id="project-detail" class="container py-5">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="assets/images/logo.png" alt="Projet 1" class="img-fluid">
-            </div>
-            <div class="col-md-6">
-                <h2>Le Projet 2</h2>
-                <p><strong>Besoin :</strong> Le besoin de ce projet est de créer une solution pour répondre à un problème spécifique dans le domaine médical.</p>
-                <p><strong>Solution :</strong> Nous avons développé une application mobile qui utilise des technologies avancées pour résoudre ce problème.</p>
-                <p><strong>Outils Utilisés :</strong> L'application a été réalisée en utilisant des outils tels que React Native, Node.js, et MongoDB pour garantir une performance optimale et une expérience utilisateur fluide.</p>
-                <p><strong>Histoire de l'Idée :</strong> L'idée est née d'une observation des lacunes dans le domaine médical et d'une volonté de trouver une solution simple mais efficace. Nous avons réuni une équipe d'experts pour concrétiser ce projet innovant.</p>
+    <!-- Header Section -->
+    <section class="hero-section text-center text-white py-5" style="background-color: #004aad;">
+        <div class="container">
+            <h1 class="display-4">YOO'FOG - Respirez la Différence</h1>
+            <p class="lead">Découvrez notre inhalateur révolutionnaire pour une santé et un bien-être optimaux.</p>
+        </div>
+    </section>
+
+    <!-- Besoin -->
+    <section id="besoin" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-primary mb-4">Le Besoin</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/images/besoin-yoo-fog.jpg" class="img-fluid rounded" alt="Besoin Yoo'Fog">
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        Avec l'augmentation des problèmes respiratoires liés à la pollution, au stress et aux maladies chroniques, il devient crucial d'avoir une solution simple et portable pour améliorer la respiration.
+                    </p>
+                    <p>
+                        Les utilisateurs recherchent des moyens naturels et efficaces pour détendre leur corps, purifier leur respiration, et optimiser leur santé au quotidien, en tout lieu et à tout moment.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Solution -->
+    <section id="solution" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center text-primary mb-4">La Solution</h2>
+            <div class="row">
+                <div class="col-md-6 order-md-2">
+                    <img src="assets/images/solution-yoo-fog.jpg" class="img-fluid rounded" alt="Solution Yoo'Fog">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <p>
+                        **YOO'FOG** est un inhalateur nasal révolutionnaire qui diffuse des brumes concentrées d’huiles essentielles et de concoctions exclusives de notre laboratoire.
+                    </p>
+                    <p>
+                        Conçu avec des embouts souples et ergonomiques, il s'adapte parfaitement à la forme des narines, offrant une expérience confortable et discrète. YOO'FOG ne se contente pas de soulager les symptômes ; il revitalise votre système respiratoire avec des formules personnalisées.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outils -->
+    <section id="outils" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-primary mb-4">Les Outils</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="fas fa-vial fa-3x text-primary mb-3"></i>
+                    <h5>Huiles Essentielles</h5>
+                    <p>Nos huiles sont extraites de plantes naturelles et testées pour garantir leur efficacité et leur sécurité.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-biohazard fa-3x text-danger mb-3"></i>
+                    <h5>Concoctions Exclusives</h5>
+                    <p>Des mélanges uniques, formulés par nos experts pour répondre à des besoins spécifiques.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-head-side-mask fa-3x text-warning mb-3"></i>
+                    <h5>Design Ergonomique</h5>
+                    <p>Des embouts flexibles pour un ajustement parfait et un confort optimal lors de l’utilisation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Histoire -->
+    <section id="histoire" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center text-primary mb-4">Notre Histoire</h2>
+            <p>
+                YOO'FOG est né de la passion de notre équipe pour les solutions naturelles et innovantes. Inspirée par les bienfaits des huiles essentielles et la médecine alternative, notre vision était de créer un produit qui allie simplicité, praticité et efficacité.
+            </p>
+            <p>
+                En collaboration avec des experts en aromathérapie et en design ergonomique, YOO'FOG a été développé pour répondre aux défis modernes tout en respectant les traditions millénaires.
+            </p>
+            <p>
+                Aujourd'hui, YOO'FOG est une solution prisée par des milliers d’utilisateurs cherchant un souffle nouveau dans leur quotidien.
+            </p>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 YOOPEE. Tous droits réservés.</p>
+    <footer class="text-center py-4">
+        <p>&copy; 2024 YOO'FOG. Tous droits réservés. | <a href="index.html">Retour à l'accueil</a></p>
     </footer>
 
     <script src="assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
