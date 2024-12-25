@@ -45,6 +45,34 @@ p {
     opacity: 1;
 }
 
+
+.navbar .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Couleur de fond du menu */
+    color: white;
+    margin-top: 0.5rem;
+    border: none;
+}
+
+.navbar .dropdown-menu a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.navbar .dropdown-menu a:hover {
+    background-color: #555; /* Couleur au survol */
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: block; /* Affiche le menu au survol */
+}
+
+
+
+
+
 /* Section Styles */
 section {
     padding: 60px 0;
