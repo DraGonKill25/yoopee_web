@@ -1,264 +1,518 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!doctype html>
+<html lang="en">
+<!--
+
+Page    : index / YOOPEE
+Version : 1.0
+ -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YOOPEE - Révolution Médicale</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>YOOPEE - Home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="YOOPEE - Mobile App Landing Page">
+    <meta name="keywords" content="HTML5, bootstrap, mobile, app, landing, ios, android, responsive">
+
+    <!-- Font -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Main css -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
+<body data-spy="scroll" data-target="#navbar" data-offset="30">
 
-<body>
-    <!-- Navigation Header -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom navbar-visible fixed-top" id="navbar">
+    <!-- Nav Menu -->
+
+    <div class="nav-menu fixed-top">
         <div class="container">
-            <a class="navbar-brand text-white" href="#">
-                <img src="assets/images/logo.png" width="50" height="50" alt="YOOPEE"> <strong>OOPEE</strong>
-            </a>
-            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="#description">Accueil</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-white dropdown-toggle" href="#" id="projetsDropdown" role="button">
-                            Projets
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="projetsDropdown">
-                            <li><a class="dropdown-item" href="projet1.html">YOOPEE</a></li>
-                            <li><a class="dropdown-item" href="projet2.html">YOO'FOG</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#team">Équipe</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Landing Page -->
-    <section id="description" class="description-section text-center" data-aos="fade-in">
-        <div class="container d-flex align-items-center flex-wrap">
-            <div class="description-text flex-grow-1">
-                <h1>Bienvenue chez YOOPEE</h1>
-                <p class="lead">Nous révolutionnons le domaine médical avec des solutions centrées sur le patient.</p>
-            </div>
-            <div class="description-image">
-                <img src="assets/images/duck.png" alt="Duck Mascot" class="img-fluid animated-duck" loading="lazy">
-            </div>
-        </div>
-    </section>
-    <script>
-        // Sélectionner l'image
-        const image = document.querySelector('.description-image img');
-
-        // Ajouter un événement de clic
-        image.addEventListener('click', function() {
-            // Ajouter la classe pour faire tourner l'image
-            image.classList.add('rotate-on-click');
-
-            // Supprimer la classe après que l'animation soit terminée (2 secondes ici)
-            setTimeout(function() {
-                image.classList.remove('rotate-on-click');
-            }, 2000); // Temps de l'animation en millisecondes
-        });
-    </script>
-
-
-
-    <!-- Projects -->
-    <section id="projects" class="text-center" data-aos="slide-in">
-        <div class="container">
-            <h2>Nos Projets</h2>
-            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <img src="assets/images/logo.png" class="img-fluid" alt="Projet 1">
-                            </div>
-                            <div class="col-md-6 text-start">
-                                <h5><a href="projet1.html">YOOPEE</a></h5>
-                                <p>
-                                    Grâce à l'application YOOPEE sur votre téléphone, vous recevez des alertes sonores et vibrantes au moment idéal pour vous rendre aux toilettes. L'application est entièrement personnalisable, vous permettant d'ajuster l'intensité des vibrations, les sons et la fréquence des rappels en fonction de vos préférences.
-                                </p>
-                                 <a href="projet1.html" class="btn btn-primary btn-sm">Voir plus</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row align-items-center">
-                            <div class="col-md-6 order-md-2">
-                                <img src="assets/images/panda3.png" class="img-fluid" alt="Projet 2">
-                            </div>
-                            <div class="col-md-6 text-end order-md-1">
-                                <h5><a href="projet2.html">Projet 2</a></h5>
-                                <p>
-                                    Une approche unique pour répondre aux besoins spécifiques des patients et des professionnels de santé.
-                                </p>
-                                 <a href="projet2.html" class="btn btn-primary btn-sm">Voir plus</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Contrôles -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Précédent</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Suivant</span>
-                </button>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Nos Valeurs -->
-    <section id="values" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Nos Valeurs</h2>
-            <div class="row align-items-center mb-4">
-                <div class="col-md-6 order-md-1 text-center" data-aos="fade-right">
-                    <i class="fas fa-lightbulb fa-4x text-primary"></i>
-                </div>
-                <div class="col-md-6 order-md-2" data-aos="fade-left">
-                    <h3>Innovation</h3>
-                    <p>Nous mettons l'innovation au cœur de nos projets pour proposer des solutions modernes et adaptées aux besoins de nos utilisateurs.</p>
-                </div>
-            </div>
-            <div class="row align-items-center mb-4">
-                <div class="col-md-6 order-md-2 text-center" data-aos="fade-left">
-                    <i class="fas fa-heart fa-4x text-danger"></i>
-                </div>
-                <div class="col-md-6 order-md-1" data-aos="fade-right">
-                    <h3>Empathie</h3>
-                    <p>Chaque décision est guidée par notre volonté de comprendre et répondre aux besoins de nos clients.</p>
-                </div>
-            </div>
-            <div class="row align-items-center mb-4">
-                <div class="col-md-6 order-md-1 text-center" data-aos="fade-right">
-                    <i class="fas fa-trophy fa-4x text-warning"></i>
-                </div>
-                <div class="col-md-6 order-md-2" data-aos="fade-left">
-                    <h3>Excellence</h3>
-                    <p>Nous aspirons à atteindre l'excellence dans toutes nos réalisations pour garantir la satisfaction de nos partenaires et utilisateurs.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <!-- Membres de l'Entreprise -->
-    <section id="team" class="text-center" data-aos="zoom-in">
-        <div class="container">
-            <h2>Notre Équipe</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <img src="assets/images/pp_R.jpg" alt="Membre 1" class="rounded-circle" width="150">
-                    <h3>Thierry Rousselet</h3>
-                </div>
-                <div class="col-md-4">
-                    <img src="assets/images/pp_M.jpeg" alt="Membre 2" class="rounded-circle" width="150">
-                    <h3>Marina Rili</h3>
-                </div>
-                <div class="col-md-4">
-                    <img src="assets/images/pp_A.png" alt="Membre 3" class="rounded-circle" width="150">
-                    <h3>Adam Rili</h3>
+                <div class="col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo_remove.png" class="img-fluid logo-img" alt="logo">OOPEE</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"> <a class="nav-link active" href="#home">ACCEUIL<span class="sr-only">(current)</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#features">APPLICATION</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#gallery">EQUIPE</a> </li>
+                                <!--<li class="nav-item"> <a class="nav-link" href="#pricing">PRICING</a> </li> -->
+                                <li class="nav-item"> <a class="nav-link" href="#contact">CONTACT</a> </li>
+                                <li class="nav-item"><a href="#download" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Télecharger</a></li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
 
-
-    <!-- Contact -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contactez-Nous</h2>
-            <form id="contactForm">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nom</label>
-                    <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Envoyer</button>
-            </form>
+    <header class="bg-gradient" id="home">
+        <div class="container mt-5">
+            <h1>Bienvenue chez YOOPEE</h1>
+            <p class="tagline">Nous révolutionnons le domaine médical avec des solutions centrées sur le patient.</p>
         </div>
-    </section>
+        <div class="img-holder mt-3"><img src="images/logo_remove.png" alt="phone" class="img-fluid"></div>
+    </header>
 
 
-    <!-- Rejoignez-Nous -->
-    <section id="join-us" class="text-center" data-aos="fade-up">
+    <!-- // end .section -->
+    <div class="section">
+
         <div class="container">
-            <h2>Rejoignez-Nous</h2>
-            <p>Suivez-nous sur nos réseaux sociaux pour rester informé de nos dernières nouveautés et initiatives.</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com" target="_blank" class="social-link">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.twitter.com" target="_blank" class="social-link">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com" target="_blank" class="social-link">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank" class="social-link">
-                    <i class="fab fa-instagram"></i>
-                </a>
+            <div class="row">
+                <div class="col-lg-6 offset-lg-6">
+                    <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div>
+                    <h2>Decouvrer notre App</h2>
+                    <p class="mb-4">L'idée de YOOPEE est née d'une expérience personnelle vécue par notre fondateur, confronté aux défis liés à l'incontinence dans son entourage familial. Déterminé à créer une solution utile et inclusive, l'équipe de YOOPEE a travaillé sans relâche pour développer une application intuitive et innovante.<br><br>
+
+Aujourd'hui, YOOPEE a pour but d'aider des milliers de personnes à reprendre confiance en elles et à vivre pleinement. </p>
+                    <!--<a href="#" class="btn btn-primary">Read more</a>-->
+                </div>
+            </div>
+            <div class="perspective-phone">
+                <img src="images/duck.png" alt="perspective phone" class="img-fluid duck">
             </div>
         </div>
-    </section>
+
+    </div>
+    <!-- // end .section -->
+
+
+    <div class="section light-bg" id="features">
+
+
+        <div class="container">
+
+            <div class="section-title">
+                <!--<small>HIGHLIGHTS</small>-->
+                <h3>Les Outils de YOOPEE</h3>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-face-smile gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body">
+                                    <h4 class="card-title">Application Mobile</h4>
+                                    <p class="card-text">Disponible sur iOS et Android pour une accessibilité optimale.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-settings gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body">
+                                    <h4 class="card-title">Personnalisation</h4>
+                                    <p class="card-text">Ajustez les paramètres selon vos préférences : intensité, fréquence, et plus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-lock gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body">
+                                    <h4 class="card-title">Empathie</h4>
+                                    <p class="card-text">La volonté de comprendre et répondre aux besoins de nos clients.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
 
 
-    <footer>
-        <p>&copy; 2024 YOOPEE. <a href="cgu.html" class="text-white">Conditions Générales d'Utilisation</a></p>
+    </div>
+
+
+    <div class="section light-bg">
+        <div class="container">
+            <div class="section-title">
+                <!--<small>FEATURES</small>-->
+                <h3>Les Fonctionnalitées de YOOPEE</h3>
+            </div>
+
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#communication">Principe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#schedule">Plannifier</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#messages">Notification</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#livechat">Récompense</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="communication">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <img src="images/idea_icon.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                        <div>
+
+                            <h2>Réflexe de Pavlov</h2>
+                            <p class="lead">Aller au WC efficacement !</p>
+                            <p>La stimulation de la region vesical peut declancher l'envie d'uriner, la vessie est entourer de nombreux recepteur sensoriel qui peuvent reagir a different stimuli, y compris les vibrations. Lorsque ces recepeteurs sont activés, ils envoient des signaux au cerveau indiquant qu'il est temps de se rendre au toilettes. Les Vibrations peuvent initier la sensation de la vessie qui se rempli. C'est une sorte de faux signal d'alarme qui est particulierement notable chez les personnes qui ont une vessie hyperactive.
+                            </p>
+                            <p> Le réflexe auditif entraînant le réflexe de vider sa vessie est une réaction automatique de votre corps à certains stimuli sonores : le bruit de l’eau qui coule déclenche l’envie d’uriner comme un “réflexe de Pavlov” des toilettes. Notre cerveau associe l’eau qui coule à l’idée de l’écoulement de l’urine, ce qui finit par déclencher une envie pressante : c’est un conditionnement classique où le cerveau fait le lien entre le son et l’action d’uriner.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="schedule">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div>
+                            <h2>Definisser vos rappels</h2>
+                            <p class="lead">Plannifier pour ne plus oublier !</p>
+                            <p>Dans YOOPEE vous pouvez definir vous meme des rappels pour ne plus se retrouver dans des situations compliquer. Vous pourrez ainsi faire face au defis lies a l'incontinence.
+                            </p>
+                            <p>
+                            </p>
+                        </div>
+                        <img src="images/schedule_icon.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="messages">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <img src="images/active_icon.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                        <div>
+                            <h2>Rappel automatique</h2>
+                            <p class="lead">Ne l'oublier jamais !</p>
+                            <p>Afin d'etre sur de ne plus avoir de trou de memoire des notifications reguliere sur les horaires conseiler pour aller au toillet sont automatiquement envoyer.
+                            </p>
+                            <p>Comme cela meme si vous n'y penser plus YOOPEE est la pour vous le rappeller.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="livechat">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div>
+                            <h2>Lorem ipsum</h2>
+                            <p class="lead">Lorem ipsum</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. Ut placerat dui eu nulla
+                                congue tincidunt ac a nibh. Mauris accumsan pulvinar lorem placerat volutpat. Praesent quis facilisis elit. Sed condimentum neque quis ex porttitor,
+                            </p>
+                            <p> malesuada faucibus augue aliquet. Sed elit est, eleifend sed dapibus a, semper a eros. Vestibulum blandit vulputate pharetra. Phasellus lobortis leo a nisl euismod, eu faucibus justo sollicitudin. Mauris consectetur, tortor
+                                sed tempor malesuada, sem nunc porta augue, in dictum arcu tortor id turpis. Proin aliquet vulputate aliquam.
+                            </p>
+                        </div>
+                        <img src="images/reward_icon.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- // end .section -->
+
+    <div class="section">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/dualphone.png" alt="dual phone" class="img-fluid">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <div class="box-icon"><span class="ti-rocket gradient-fill ti-3x"></span></div>
+                        <h2>Télécharger YOOPEE</h2>
+                        <p class="mb-4">Grâce à l'application YOOPEE sur votre téléphone, vous recevez des alertes sonores et vibrantes au moment idéal pour vous rendre aux toilettes. L'application est entièrement personnalisable, vous permettant d'ajuster l'intensité des vibrations, les sons et la fréquence des rappels en fonction de vos préférences.</p>
+                        <a href="#" class="btn btn-primary">Télécharger</a></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- // end .section -->
+
+
+    <div class="section light-bg">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 d-flex align-items-center">
+                    <ul class="list-unstyled ui-steps">
+                        <li class="media">
+                            <div class="circle-icon mr-4">1</div>
+                            <div class="media-body">
+                                <h5>Créer votre compte</h5>
+                                <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium obcaecati vel exercitationem </p>-->
+                            </div>
+                        </li>
+                        <li class="media my-4">
+                            <div class="circle-icon mr-4">2</div>
+                            <div class="media-body">
+                                <h5>Choisisser vibration et musique</h5>
+                                <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium obcaecati vel exercitationem eveniet</p>-->
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="circle-icon mr-4">3</div>
+                            <div class="media-body">
+                                <h5>Profiter de vivre</h5>
+                                <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium obcaecati vel exercitationem </p>-->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/iphonex.png" alt="iphone" class="img-fluid">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- // end .section -->
+
+<!--
+    <div class="section">
+        <div class="container">
+            <div class="section-title">
+                <small>TESTIMONIALS</small>
+                <h3>What our Customers Says</h3>
+            </div>
+
+            <div class="testimonials owl-carousel">
+                <div class="testimonials-single">
+                    <img src="images/client.png" alt="client" class="client-img">
+                    <blockquote class="blockquote">Uniquely streamline highly efficient scenarios and 24/7 initiatives. Conveniently embrace multifunctional ideas through proactive customer service. Distinctively conceptualize 2.0 intellectual capital via user-centric partnerships.</blockquote>
+                    <h5 class="mt-4 mb-2">Crystal Gordon</h5>
+                    <p class="text-primary">United States</p>
+                </div>
+                <div class="testimonials-single">
+                    <img src="images/client.png" alt="client" class="client-img">
+                    <blockquote class="blockquote">Uniquely streamline highly efficient scenarios and 24/7 initiatives. Conveniently embrace multifunctional ideas through proactive customer service. Distinctively conceptualize 2.0 intellectual capital via user-centric partnerships.</blockquote>
+                    <h5 class="mt-4 mb-2">Crystal Gordon</h5>
+                    <p class="text-primary">United States</p>
+                </div>
+                <div class="testimonials-single">
+                    <img src="images/client.png" alt="client" class="client-img">
+                    <blockquote class="blockquote">Uniquely streamline highly efficient scenarios and 24/7 initiatives. Conveniently embrace multifunctional ideas through proactive customer service. Distinctively conceptualize 2.0 intellectual capital via user-centric partnerships.</blockquote>
+                    <h5 class="mt-4 mb-2">Crystal Gordon</h5>
+                    <p class="text-primary">United States</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>-->
+    <!-- // end .section -->
+
+
+    <div class="section light-bg" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <small>Fondateurs</small>
+                <h3>Notre Equipe</h3>
+            </div>
+
+            <div class="img-gallery owl-carousel owl-theme">
+                <div><img src="images/pp_A.png" alt="image">Adam RILI, Responsable technique</div>
+                <div><img src="images/pp_M_2.png" alt="image">Marina RILI, Responsable Juridique</div>
+                <div><img src="images/pp_R.png" alt="image">Thierry Rousselet, Responsable médical (ORL)</div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- // end .section -->
+
+
+
+
+<!--
+    <div class="section" id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <small>PRICING</small>
+                <h3>Upgrade to Pro</h3>
+            </div>
+
+            <div class="card-deck">
+                <div class="card pricing">
+                    <div class="card-head">
+                        <small class="text-primary">PERSONAL</small>
+                        <span class="price">$14<sub>/m</sub></span>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <div class="list-group-item">10 Projects</div>
+                        <div class="list-group-item">5 GB Storage</div>
+                        <div class="list-group-item">Basic Support</div>
+                        <div class="list-group-item"><del>Collaboration</del></div>
+                        <div class="list-group-item"><del>Reports and analytics</del></div>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary btn-lg btn-block">Choose this Plan</a>
+                    </div>
+                </div>
+                <div class="card pricing popular">
+                    <div class="card-head">
+                        <small class="text-primary">FOR TEAMS</small>
+                        <span class="price">$29<sub>/m</sub></span>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <div class="list-group-item">Unlimited Projects</div>
+                        <div class="list-group-item">100 GB Storage</div>
+                        <div class="list-group-item">Priority Support</div>
+                        <div class="list-group-item">Collaboration</div>
+                        <div class="list-group-item">Reports and analytics</div>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary btn-lg btn-block">Choose this Plan</a>
+                    </div>
+                </div>
+                <div class="card pricing">
+                    <div class="card-head">
+                        <small class="text-primary">ENTERPRISE</small>
+                        <span class="price">$249<sub>/m</sub></span>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <div class="list-group-item">Unlimited Projects</div>
+                        <div class="list-group-item">Unlimited Storage</div>
+                        <div class="list-group-item">Collaboration</div>
+                        <div class="list-group-item">Reports and analytics</div>
+                        <div class="list-group-item">Web hooks</div>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary btn-lg btn-block">Choose this Plan</a>
+                    </div>
+                </div>
+            </div>
+-->            <!-- // end .pricing -->
+
+<!--
+        </div>
+
+    </div>
+-->    <!-- // end .section -->
+
+
+    <div class="section pt-0">
+        <div class="container">
+            <div class="section-title">
+                <small>FAQ</small>
+                <h3>Questions Fréquentes</h3>
+            </div>
+
+            <div class="row pt-4">
+                <div class="col-md-6">
+                    <h4 class="mb-3">Est-ce que l'application est gratuite ?</h4>
+                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
+                    <h4 class="mb-3">LOREM IPSUM ?</h4>
+                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
+
+                </div>
+                <div class="col-md-6">
+                    <h4 class="mb-3">LOREM IPSUM ?</h4>
+                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
+                    <h4 class="mb-3">LOREM IPSUM ?</h4>
+                    <p class="light-font mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante. </p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- // end .section -->
+
+
+
+    <div class="section bg-gradient" id="download">
+        <div class="container">
+            <div class="call-to-action">
+
+                <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div>
+                <h2>Télécharger YOOPEE sur toutes les plateformes</h2>
+                <p class="tagline">Disponible pour la majorité des téléphone portable.</p>
+                <div class="my-4">
+
+                    <a href="#" class="btn btn-light"><img src="images/appleicon.png" alt="icon"> App Store</a>
+                    <a href="#" class="btn btn-light"><img src="images/playicon.png" alt="icon"> Google play</a>
+                </div>
+                <p class="text-primary"><small><i>*Fonctionne sur iOS 10.0.5+, Android Kitkat et supérieur. </i></small></p>
+            </div>
+        </div>
+
+    </div>
+    <!-- // end .section -->
+
+    <div class="light-bg py-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left">
+                    <p class="mb-2"> <span class="ti-location-pin mr-2"></span>L'Hay-les-Roses 94340, Ile-de-France, France</p>
+                    <div class=" d-block d-sm-inline-block">
+                        <p class="mb-2">
+                            <span class="ti-email mr-2"></span> <a class="mr-4" href="mailto:yoopee@gmx.fr">yoopee@gmx.fr</a>
+                        </p>
+                    </div>
+                    <div class="d-block d-sm-inline-block">
+                        <p class="mb-0">
+                            <span class="ti-headphone-alt mr-2"></span> <a href="tel:+33768006305">+33768006305</a>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="social-icons">
+                        <!--<a href="#"><span class="ti-facebook"></span></a>
+                        <a href="#"><span class="ti-twitter-alt"></span></a>-->
+                        <a href="https://www.instagram.com/yoopee.official" target="_blank" rel="noopener noreferrer"><span class="ti-instagram"></span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- // end .section -->
+    <footer class="my-5 text-center">
+        <p class="mb-2"><small>COPYRIGHT ©2025. ALL RIGHTS RESERVED.</small></p>
+
+        <small>
+            <a href="#" class="m-2">Article</a>
+            <a href="#" class="m-2">Condition</a>
+            <a href="#" class="m-2">Confidentialité</a>
+        </small>
     </footer>
 
-    <script src="assets/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000, // Durée de l'animation (en ms)
-            easing: 'ease-out', // Type de transition
-            once: true, // Animation uniquement lors de la première apparition
-        });
-    </script>
-    <script>
-        // Navigation show/hide
-        let lastScrollY = 0;
-        const navbar = document.getElementById('navbar');
+    <!-- jQuery and Bootstrap -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins JS -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
 
-        window.addEventListener('scroll', () => {
-            const currentScrollY = window.scrollY;
-
-            if (currentScrollY > lastScrollY) {
-                navbar.classList.add('navbar-hidden');
-            } else {
-                navbar.classList.remove('navbar-hidden');
-            }
-
-            lastScrollY = currentScrollY;
-        });
-    </script>
 </body>
+
 </html>
